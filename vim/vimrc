@@ -1,10 +1,8 @@
 " .vimrc file settings
 
-" Settings
-" Enable 256 colors in vim
-set t_Co=256
-
+" =====================================================================
 " vim-plug plugin settings
+
 call plug#begin('~/.vim/plugged')
 
 " List of plugins
@@ -17,7 +15,15 @@ Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
+" =====================================================================
+" Settings
+
+" Enable 256 colors in vim
+set t_Co=256
+
+" =====================================================================
 " vim-airline settings
+
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 
