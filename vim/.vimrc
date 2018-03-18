@@ -1,3 +1,4 @@
+
 " .vimrc file settings
 
 " =====================================================================
@@ -6,26 +7,29 @@
 call plug#begin('~/.vim/plugged')
 
 " List of plugins
+Plug 'vim-airline/vim-airline'            " Airline plugin
+Plug 'vim-airline/vim-airline-themes'     " Airline themes
 
-" vim-airline plugin
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" git plugin
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'                 " Git plugin
+
+" Python plugins
+Plug 'davidhalter/jedi-vim'               " Python autocomplete plugin
 
 call plug#end()
 
 " =====================================================================
 " Settings
 
-" no vi-compatible
-set nocompatible
+set nocompatible                          " No vi-compatible
 
-" Enable 256 colors in vim
-set t_Co=256
+set t_Co=25                               " Enable 256 colors in vim
 
-" Show line numbers
-set number
+set number                                " Show line numbers
+
+" Tab Settings
+set tabstop=4                             " 4 Whitespaces for Tab
+set shiftwidth=4                          " Shift lines/indentation by 4 spaces
+set expandtab                             " Expand tabs into spaces
 
 " =====================================================================
 " vim-airline settings
